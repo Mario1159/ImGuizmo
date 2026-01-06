@@ -2,7 +2,8 @@ cmake_minimum_required(VERSION 3.15)
 
 project(imguizmo LANGUAGES CXX)
 
-option(IMGUIZMO_BUILD_EXAMPLE "Build ImGuizmo example" OFF)
+# TODO: Add support for building examples
+# option(IMGUIZMO_BUILD_EXAMPLE "Build ImGuizmo example" OFF)
 
 find_package(imgui REQUIRED)
 
@@ -28,7 +29,8 @@ target_link_libraries(imguizmo
         imgui::imgui
 )
 
-if (IMGUIZMO_BUILD_EXAMPLE)
-    add_subdirectory(example)
-endif()
+# TODO: Add CMakeLists on example dir
+#if (IMGUIZMO_BUILD_EXAMPLE)
+#    add_subdirectory(example)
+#endif()
 
